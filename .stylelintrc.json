@@ -13,7 +13,8 @@
   "rules": {
     "sh-waqar/declaration-use-variable": [
       [
-        "/color/",
+        "background",
+        "color",
         "z-index",
         "font-size"
       ]

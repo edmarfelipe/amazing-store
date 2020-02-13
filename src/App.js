@@ -1,23 +1,14 @@
 import React from 'react'
-import SideMenu from './components/SideMenu'
+import GlobalStyle from './styles/global'
+import Card from './components/Card'
+import Archive from './pages/Archive'
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <SideMenu />
-    </div>
+    <>
+      <GlobalStyle />
+      <Archive />
+      <Card />
+    </>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import SideMenu from './components/SideMenu'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           Learn React
         </a>
       </header>
+      <SideMenu />
     </div>
   )
 }

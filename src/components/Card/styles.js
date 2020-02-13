@@ -13,8 +13,8 @@ export const Container = styled.li`
 `
 
 export const Image = styled.img`
-  width: 100px;
   height: auto;
+  width: 100px;
 `
 
 export const Title = styled.span`

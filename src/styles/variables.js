@@ -1,4 +1,5 @@
 export default {
+  color: '#333',
   fontSize: '14px',
   fontFamily: 'Circular Book',
   fontFamilyBold: 'Circular Bold',

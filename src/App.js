@@ -1,6 +1,6 @@
 import React from 'react'
 import GlobalStyle from './styles/global'
-
+import Card from './components/Card'
 import Archive from './pages/Archive'
 
 export default function App() {
@@ -8,6 +8,7 @@ export default function App() {
     <>
       <GlobalStyle />
       <Archive />
+      <Card />
     </>
   )
 }

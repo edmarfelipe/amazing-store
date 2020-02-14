@@ -1,5 +1,9 @@
 export default {
   color: '#333',
   fontSize: '14px',
-  fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial',
+  fontFamily: 'Circular Book',
+  fontFamilyBold: 'Circular Bold',
+  primaryColor: '#f8cb00',
+  secondaryColor: '#6364d8;',
+  backgroundColor: '#ffffff',
 }

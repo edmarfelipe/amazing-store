@@ -1,9 +1,11 @@
 export default {
-  color: '#333',
-  fontSize: '14px',
+  backgroundColor: '#ffffff',
   fontFamily: 'Circular Book',
   fontFamilyBold: 'Circular Bold',
+  fontSize: '14px',
+  lineHeight: '20px',
   primaryColor: '#f8cb00',
+  quaternaryColor: '#a3a3a3',
   secondaryColor: '#6364d8;',
-  backgroundColor: '#ffffff',
+  tertiaryColor: '#171717',
 }

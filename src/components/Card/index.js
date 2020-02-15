@@ -10,7 +10,7 @@ export default function Card({
 }) {
   return (
     <Container>
-      <Image alt={imageAlt} src={imageUrl} />
+      <Image alt={imageAlt} src={imageUrl} loading="lazy" />
       <Title>{title}</Title>
       <Value>{`$ ${price}`}</Value>
     </Container>

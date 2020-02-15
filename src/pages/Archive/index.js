@@ -2,19 +2,29 @@ import React from 'react'
 
 import { Container } from './styles'
 
-import Header from '../../components/Header'
+import Card from '../../components/Card'
 
 export default function Archive() {
-  const menuItems = [
-    'Shipping',
-    'Blog',
-    'Company',
-    'My account',
-  ]
-
   return (
     <Container>
-      <Header title="Amazing store" cityName="Los Angeles" tel="8 800 505-04-83" menuItems={menuItems} />
+      <Card
+        title="Missha All Around Safe Block Sebum Zero Sun"
+        imageUrl="./assets/imgs/product-1.png"
+        imageAlt=""
+        price="4.00"
+      />
+      <Card
+        title="Innisfree Green Tea Balancing Cream"
+        imageUrl="./assets/imgs/product-2.png"
+        imageAlt=""
+        price="18.00"
+      />
+      <Card
+        title="Claire’s Cloud 9 Blanc De Whitening Cream"
+        imageUrl="./assets/imgs/product-3.png"
+        imageAlt=""
+        price="4.00"
+      />
     </Container>
   )
 }

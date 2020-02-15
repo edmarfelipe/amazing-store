@@ -12,6 +12,5 @@ export default {
   quaternaryColor: '#a3a3a3',
   secondaryColor: '#6364d8;',
   tertiaryColor: '#171717',
-  // textColor: '#2d2d2d',
   textColor: '#131313',
 }

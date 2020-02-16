@@ -1,18 +1,25 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import {
   Container, Image, Title, Value,
 } from './styles'
 
-export default function Card() {
+export default function Card({
+  title, price, imageUrl, imageAlt,
+}) {
   return (
     <Container>
-      <Image src="https://pandorajoias.vteximg.com.br/arquivos/ids/166831-185-185/781978_RGB.png?v=636704590685930000" />
-      <Title>
-        Hearts Pandora Rose Clip
-      </Title>
-      <Value>
-        R$ 229,00
-      </Value>
+      <Image alt={imageAlt} src={imageUrl} loading="lazy" />
+      <Title>{title}</Title>
+      <Value>{`$ ${price}`}</Value>
     </Container>
   )
+}
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  imageAlt: PropTypes.string.isRequired,
 }

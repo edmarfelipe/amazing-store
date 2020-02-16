@@ -1,32 +1,26 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react'
+import PropTypes from 'prop-types'
 import {
   Container, Title, Category, Items, Item,
 } from './styles'
 
-const SideMenu = () => (
-  <Container>
-    <Category>
-      <Title>FACE</Title>
+export default function SideMenu({ categories }) {
+  const listItems = categories.map((category, categoryIndex) => (
+    <Category key={categoryIndex}>
+      <Title>{category.title}</Title>
       <Items>
-        <Item isActive>creams</Item>
-        <Item>Toners</Item>
-        <Item>Masks</Item>
+        {
+          category.items.map((item, itemIndex) => <Item key={itemIndex}>{item}</Item>)
+        }
       </Items>
+    </Category>
+  ))
+  return (
+    <Container>{listItems}</Container>
+  )
+}
 
-    </Category>
-    <Category>
-      <Title>BODY</Title>
-    </Category>
-    <Category>
-      <Title>FOOT</Title>
-    </Category>
-    <Category>
-      <Title>HANDS</Title>
-    </Category>
-    <Category>
-      <Title>HAIR</Title>
-    </Category>
-  </Container>
-)
-
-export default SideMenu
+SideMenu.propTypes = {
+  categories: PropTypes.arrayOf(PropTypes.object).isRequired,
+}

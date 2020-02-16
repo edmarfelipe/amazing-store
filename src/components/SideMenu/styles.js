@@ -7,6 +7,7 @@ export const Container = styled.ul`
   border-radius: 3px;
   box-shadow: 0px 10px 70px rgba( 121, 121, 121, 0.1);
   height: auto;
+  list-style: none;
   padding: 10px;
   width: 285px;
 `
@@ -23,7 +24,8 @@ export const Title = styled.h2`
 `
 
 export const Items = styled.ul`
-  display: grid
+  display: grid;
+  list-style: none;
 `
 
 export const Item = styled.li`

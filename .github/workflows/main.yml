@@ -1,0 +1,83 @@
+name: Build and Test
+on:
+  push:
+    branches:
+    - master
+
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: Cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: node_modules-${{ hashFiles('**/yarn.lock') }}
+
+    - name: Install
+      run: yarn
+
+  lint:
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: node_modules-${{ hashFiles('**/yarn.lock') }}
+
+    - name: Lint Style
+      run: yarn lint:styles
+
+    - name: Lint Javascript
+      run: yarn lint:scripts
+
+  build:
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: node_modules-${{ hashFiles('**/yarn.lock') }}
+
+    - name: Build
+      run: yarn build
+
+  test:
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: node_modules-${{ hashFiles('**/yarn.lock') }}
+
+    - name: Test
+      run: yarn test
+      env:
+        CI: true

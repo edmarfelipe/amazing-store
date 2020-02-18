@@ -10,10 +10,6 @@ export const Container = styled.li`
   padding: 10px;
   text-align: center;
   width: 100%;
-
-  &:hover  button {
-    display: block;
-  }
 `
 
 export const Button = styled.button`
@@ -22,18 +18,13 @@ export const Button = styled.button`
   box-sizing: border-box;
   color: ${Variables.backgroundColor};
   cursor: pointer;
-  display: none;
+  display: block;
   font-family: 'Raleway', sans-serif;
   height: 50px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   transition: 1s;
   width: 100%;
-
-
-  &:hover {
-    transform: translate(0, -20px);
-  }
 `
 
 export const Image = styled.img`

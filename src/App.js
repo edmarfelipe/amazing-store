@@ -30,7 +30,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <Header title="Amazing store" cityName="Los Angeles" tel="8 800 505-04-83" menuItems={menuItems} />
+      <Header title="Amazing store" cityName="Capitão Andrade" tel="8 800 505-04-83" menuItems={menuItems} />
       <Archive />
       <SideMenu categories={categories} />
     </>

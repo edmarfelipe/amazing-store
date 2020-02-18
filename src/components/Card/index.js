@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import {
-  Container, Image, Title, Value,
+  Container, Image, Title, Value, Button,
 } from './styles'
 
 export default function Card({
@@ -13,6 +13,7 @@ export default function Card({
       <Image alt={imageAlt} src={imageUrl} loading="lazy" />
       <Title>{title}</Title>
       <Value>{`$ ${price}`}</Value>
+      <Button>ADD TO CART</Button>
     </Container>
   )
 }

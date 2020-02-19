@@ -5,23 +5,21 @@ import {
 
 const SideMenu = () => (
   <Container>
+    <h2>All Categories</h2>
     <Category>
-      <Title>FACE</Title>
-      <Item isActive>creams</Item>
+      <Title>Body</Title>
+      <Item>creams</Item>
       <Item>Toners</Item>
       <Item>Masks</Item>
     </Category>
     <Category>
-      <Title>BODY</Title>
+      <Title>Foot</Title>
     </Category>
     <Category>
-      <Title>FOOT</Title>
+      <Title>Hands</Title>
     </Category>
     <Category>
-      <Title>HANDS</Title>
-    </Category>
-    <Category>
-      <Title>HAIR</Title>
+      <Title>Hair</Title>
     </Category>
   </Container>
 )

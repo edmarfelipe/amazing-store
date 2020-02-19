@@ -1,15 +1,18 @@
 import React from 'react'
 import {
-  Container, Title, Category, Item,
+  Container, Title, Category, Items, Item,
 } from './styles'
 
 const SideMenu = () => (
   <Container>
     <Category>
       <Title>FACE</Title>
-      <Item isActive>creams</Item>
-      <Item>Toners</Item>
-      <Item>Masks</Item>
+      <Items>
+        <Item isActive>creams</Item>
+        <Item>Toners</Item>
+        <Item>Masks</Item>
+      </Items>
+
     </Category>
     <Category>
       <Title>BODY</Title>

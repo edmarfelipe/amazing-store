@@ -13,19 +13,19 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   color: ${variables.tertiaryColor};
-  font-size: ${variables.fontSizes.base};
+  font-size: ${variables.fontSize};
   height: 20px;
   line-height: ${variables.lineHeight};
 `
 
 export const Category = styled.h2`
-  font-size: ${variables.fontSizes.base};
+  font-size: ${variables.fontSize};
   margin-top: 10px;
 `
 
 export const Item = styled.p`
   color: ${(props) => props.isActive ? variables.primaryColor : variables.quaternaryColor};
-  font-size: ${variables.fontSizes.base};
+  font-size: ${variables.fontSize};
   line-height: ${variables.lineHeight};
   margin-top: 10px;
 `

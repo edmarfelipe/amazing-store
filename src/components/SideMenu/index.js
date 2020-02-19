@@ -6,12 +6,12 @@ import {
 } from './styles'
 
 export default function SideMenu({ categories }) {
-  const listItems = categories.map((category, categoryIndex) => (
-    <Category key={categoryIndex}>
+  const listItems = categories.map((category) => (
+    <Category key={category.id.toString()}>
       <Title>{category.title}</Title>
       <Items>
         {
-          category.items.map((item, itemIndex) => <Item key={itemIndex}>{item}</Item>)
+          category.items.map((item) => <Item key={item}>{item}</Item>)
         }
       </Items>
     </Category>

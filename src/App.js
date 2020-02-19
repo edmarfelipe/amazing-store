@@ -6,14 +6,17 @@ import Header from './components/Header'
 
 const categories = [
   {
+    id: '1',
     title: 'Sala',
     items: ['sofá', 'tv'],
   },
   {
+    id: '2',
     title: 'Quarto',
     items: ['cama', 'Guarda-roupas'],
   },
   {
+    id: '3',
     title: 'Cozinha',
     items: ['Geladeira', 'Fogão', 'Liquidificador'],
   },

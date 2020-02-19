@@ -1,4 +1,3 @@
-/* eslint-disable no-confusing-arrow */
 import styled from 'styled-components'
 import variables from '../../styles/variables'
 
@@ -29,7 +28,7 @@ export const Items = styled.ul`
 `
 
 export const Item = styled.li`
-  color: ${(props) => props.isActive ? variables.primaryColor : variables.quaternaryColor};
+  color: ${(props) => (props.isActive ? variables.primaryColor : variables.quaternaryColor)};
   font-size: ${variables.fontSizes.base};
   line-height: ${variables.lineHeight};
   margin-top: 10px;

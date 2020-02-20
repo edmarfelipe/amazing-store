@@ -1,4 +1,3 @@
-/* eslint-disable no-confusing-arrow */
 import styled from 'styled-components'
 import variables from '../../styles/variables'
 
@@ -16,21 +15,22 @@ export const Category = styled.li`
   margin-top: 10px;
 `
 
-export const Title = styled.h2`
+export const Title = styled.div`
   color: ${variables.tertiaryColor};
+  cursor: pointer;
   font-size: ${variables.fontSize};
   height: 20px;
   line-height: ${variables.lineHeight};
 `
 
 export const Items = styled.ul`
-  display: grid;
   list-style: none;
 `
 
 export const Item = styled.li`
-  color: ${(props) => props.isActive ? variables.primaryColor : variables.quaternaryColor};
-  font-size: ${variables.fontSize};
+  color: ${(props) => (props.isActive ? variables.primaryColor : variables.quaternaryColor)};
+  cursor: pointer;
+  font-size: ${variables.fontSizes.base};
   line-height: ${variables.lineHeight};
   margin-top: 10px;
 `

@@ -17,6 +17,7 @@ export const Category = styled.li`
 
 export const Title = styled.h2`
   color: ${variables.tertiaryColor};
+  cursor: pointer;
   font-size: ${variables.fontSizes.base};
   height: 20px;
   line-height: ${variables.lineHeight};
@@ -29,6 +30,8 @@ export const Items = styled.ul`
 
 export const Item = styled.li`
   color: ${(props) => (props.isActive ? variables.primaryColor : variables.quaternaryColor)};
+  cursor: pointer;
+  display: grid;
   font-size: ${variables.fontSizes.base};
   line-height: ${variables.lineHeight};
   margin-top: 10px;

@@ -1,18 +1,33 @@
-import React from 'react'
+/* eslint-disable no-unused-expressions */
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import {
   Container, Title, Category, Items, Item,
 } from './styles'
 
 export default function SideMenu({ categories }) {
+  const [activeCategory, setActiveCategory] = useState(1)
+
+  function showCategory(categoryId) {
+    if (categoryId === activeCategory) {
+      setActiveCategory(0)
+      return
+    }
+    setActiveCategory(categoryId)
+  }
+
   const listItems = categories.map((category) => (
     <Category key={category.id.toString()}>
-      <Title>{category.title}</Title>
-      <Items>
-        {
-          category.items.map((item) => <Item key={item}>{item}</Item>)
-        }
-      </Items>
+      <Title onClick={() => showCategory(category.id)}>{category.title}</Title>
+      {
+        activeCategory === category.id
+          ? (
+            <Items>
+              {category.items.map((item) => <Item key={item.id}>{item.title}</Item>)}
+            </Items>
+          ) : null
+      }
+
     </Category>
   ))
   return (

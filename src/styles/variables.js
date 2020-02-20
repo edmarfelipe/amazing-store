@@ -13,4 +13,9 @@ export default {
   secondaryColor: '#6364d8;',
   tertiaryColor: '#171717',
   textColor: '#131313',
+  zIndex: {
+    lvOne: '5',
+    lvTwo: '10',
+    lvThree: '15',
+  },
 }

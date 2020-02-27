@@ -16,9 +16,8 @@ export const Container = styled.li`
   z-index: ${Variables.zIndex.lvOne};
 
   &:hover button {
+    flex: 0.4;
     opacity: 1;
-    transform: translateY(0px);
-    transition: opacity .5s;
   }
 `
 
@@ -29,10 +28,9 @@ export const Button = styled.button`
   color: ${Variables.backgroundColor};
   cursor: pointer;
   display: block;
-  height: 50px;
-  opacity: 0;
-  transform: translateY(82px);
-  transition: 1s;
+  flex: 0;
+  opacity:0;
+  transition: 300ms;
   width: 100%;
 `
 

@@ -10,7 +10,9 @@
     "lint-fix": "yarn lint-fix:scripts",
     "lint:styles": "stylelint src",
     "lint:scripts": "eslint src",
-    "lint-fix:scripts": "eslint --fix src"
+    "lint-fix:scripts": "eslint --fix src",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s docs"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -23,6 +25,9 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/preset-create-react-app": "^1.5.2",
+    "@storybook/react": "^5.3.13",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "eslint": "^6.8.0",

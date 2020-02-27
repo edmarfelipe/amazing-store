@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import variables from '../../styles/variables'
 
 export const Container = styled.ul`
@@ -22,8 +22,17 @@ export const Title = styled.div`
   height: 20px;
   line-height: ${variables.lineHeight};
 `
+const appear = keyframes`
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+`
 
 export const Items = styled.ul`
+  animation: ${appear} 200ms ease;
   list-style: none;
 `
 

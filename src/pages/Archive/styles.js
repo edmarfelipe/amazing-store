@@ -11,5 +11,6 @@ export const Container = styled.ul`
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 25% 75%;
-  margin: 15px 0;
+  margin: 0 auto;
+  max-width: 1180px;
 `

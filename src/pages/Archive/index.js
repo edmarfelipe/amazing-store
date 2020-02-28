@@ -3,6 +3,7 @@ import React from 'react'
 import { Container, Grid } from './styles'
 import Card from '../../components/Card'
 import SideMenu from '../../components/SideMenu'
+import Paginator from '../../components/Paginator'
 
 const categories = [
   {
@@ -25,6 +26,7 @@ const categories = [
 export default function Archive() {
   return (
     <Grid>
+      <Paginator />
       <SideMenu categories={categories} />
       <Container>
         <Card

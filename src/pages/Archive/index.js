@@ -26,8 +26,8 @@ const categories = [
 export default function Archive() {
   return (
     <Grid>
-      <Paginator />
       <SideMenu categories={categories} />
+      <Paginator />
       <Container>
         <Card
           title="Missha All Around Safe Block Sebum Zero Sun"

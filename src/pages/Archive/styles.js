@@ -3,6 +3,7 @@ import Variables from '../../styles/variables'
 
 export const Container = styled.ul`
   display: grid;
+  grid-column: 2;
   grid-gap: 28px;
   grid-template-columns: repeat(4, 1fr);
   z-index: ${Variables.zIndex.lvTwo};
@@ -11,5 +12,6 @@ export const Container = styled.ul`
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 25% 75%;
-  margin: 15px 0;
+  margin: 0 auto;
+  max-width: 1180px;
 `

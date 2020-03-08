@@ -1,9 +1,9 @@
 import React from 'react'
 
+import Card from 'components/Card'
+import SideMenu from 'components/SideMenu'
+import Paginator from 'components/Paginator'
 import { Container, Grid } from './styles'
-import Card from '../../components/Card'
-import SideMenu from '../../components/SideMenu'
-import Paginator from '../../components/Paginator'
 
 const categories = [
   {

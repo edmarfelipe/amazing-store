@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import variables from '../../styles/variables'
+import variables from 'styles/variables'
 
 export const Container = styled.ul`
   background: ${variables.backgroundColor};

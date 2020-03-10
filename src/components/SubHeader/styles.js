@@ -9,12 +9,12 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
 `
-export const GroupIcon = styled.div`
+export const Paginator = styled.div`
   align-items: center;
   display: flex;
 `
 
-export const GroupTitle = styled.p`
+export const PaginatorTitle = styled.p`
   display: inline-block;
   font-size: ${Variables.fontSizes.base};
   margin-right: 10px;

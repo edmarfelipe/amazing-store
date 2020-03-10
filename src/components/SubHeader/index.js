@@ -1,19 +1,19 @@
 import React from 'react'
 import {
-  Container, GroupIcon, GroupTitle, Title,
+  Container, Paginator, PaginatorTitle, Title,
 } from './styles'
 
 import Icon from '../Icon'
 
-export default function Paginator() {
+export default function SubHeader() {
   return (
     <Container>
       <Title>Creams & gels</Title>
-      <GroupIcon>
-        <GroupTitle>Showing 60 of 392</GroupTitle>
+      <Paginator>
+        <PaginatorTitle>Showing 60 of 392</PaginatorTitle>
         <Icon name="arrowleft" width={25} />
         <Icon name="arrowright" width={25} />
-      </GroupIcon>
+      </Paginator>
     </Container>
   )
 }

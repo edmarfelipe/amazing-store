@@ -2,7 +2,7 @@ import React from 'react'
 
 import Card from 'components/Card'
 import SideMenu from 'components/SideMenu'
-import Paginator from 'components/Paginator'
+import SubHeader from 'components/SubHeader'
 import { Container, Grid } from './styles'
 
 const categories = [
@@ -27,7 +27,7 @@ export default function Archive() {
   return (
     <Grid>
       <SideMenu categories={categories} />
-      <Paginator />
+      <SubHeader />
       <Container>
         <Card
           title="Missha All Around Safe Block Sebum Zero Sun"

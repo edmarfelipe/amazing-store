@@ -10,7 +10,7 @@ export const Container = styled.div`
   text-align: center;
   width: 100%;
 `
-export const ButtonName = styled.p`
+export const Name = styled.p`
  background: ${variables.secondaryColor};
  border-bottom-left-radius: 3px;
  border-top-left-radius: 3px;
@@ -19,7 +19,7 @@ export const ButtonName = styled.p`
  padding: 10px 20px;
 `
 
-export const ButtonValue = styled.p`
+export const Value = styled.p`
 background: ${variables.quinaryColor};
 border-bottom-right-radius: 3px;
 border-top-right-radius: 3px;

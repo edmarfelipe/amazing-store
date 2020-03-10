@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Container, ButtonName, ButtonValue } from './styles'
+import { Container, Name, Value } from './styles'
 
-export default function MyCartButton({ btnName, btnValue }) {
+export default function MyCartButton({ name, value }) {
   return (
     <Container>
-      <ButtonName>{btnName}</ButtonName>
-      <ButtonValue>{btnValue}</ButtonValue>
+      <Name>{name}</Name>
+      <Value>{value}</Value>
     </Container>
   )
 }
 
 MyCartButton.propTypes = {
-  btnName: PropTypes.string.isRequired,
-  btnValue: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
 }

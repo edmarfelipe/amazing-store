@@ -8,6 +8,6 @@ export default {
 
 export function Default() {
   return (
-    <MyCartButton btnValue="15" btnName="MY CART" />
+    <MyCartButton value="15" name="MY CART" />
   )
 }

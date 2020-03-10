@@ -9,10 +9,12 @@ export default {
   },
   lineHeight: '20px',
   primaryColor: '#f8cb00',
-  quaternaryColor: '#a3a3a3',
   secondaryColor: '#6364d8;',
   tertiaryColor: '#171717',
+  quaternaryColor: '#a3a3a3',
+  quinaryColor: '#393ab1',
   textColor: '#131313',
+  whiteColor: '#fff',
   zIndex: {
     lvOne: '5',
     lvTwo: '10',

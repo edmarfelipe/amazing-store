@@ -15,7 +15,8 @@ export const Wraper = styled.div`
   grid-template-rows: 1fr 1fr;
   height: 100%;
   margin: 0 auto;
-  width: 1180px;
+  max-width: 1180px;
+  width: 80%;
 `
 
 export const Title = styled.span`

@@ -1712,7 +1712,7 @@
   dependencies:
     lodash "^4.17.15"
 
-"@storybook/node-logger@5.3.17", "@storybook/node-logger@^5.2.0":
+"@storybook/node-logger@5.3.17", "@storybook/node-logger@^5.3.14":
   version "5.3.17"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-5.3.17.tgz#f3ad5bf9dd74d8e1cdfb8d831d66a80c5039cf4c"
   integrity sha512-onfcxl37BYZI1HGuPI9MelkyUWjn7NpfN8RUYdqG9P6WKiIY5xbpG0V6qod5jvIKIypK0NmfJTtneOu46L/oDg==
@@ -1724,15 +1724,15 @@
     pretty-hrtime "^1.0.3"
     regenerator-runtime "^0.13.3"
 
-"@storybook/preset-create-react-app@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-1.5.2.tgz#9bbdb599623031155f866b738bab8f4b2d41ca1c"
-  integrity sha512-SHbuOjll6NvtTb+lHOk2/pra6jju4SgRB3M0auvvvJfpYkXaixlsuX5Q/Sv4uZ+LgQgsBBBaZcPxyZz+R9lf0A==
+"@storybook/preset-create-react-app@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-2.1.0.tgz#842c50f52f8ec3d4c386b399763d3539011a8bdf"
+  integrity sha512-jfE+RVbcRKzCms1hXNBj9LEusznCvwjpCwGiBk66iW9NxpRryJhZXYxR+X6ngXjnqUXnsgum5vEiDAbqFvhl0Q==
   dependencies:
-    "@storybook/node-logger" "^5.2.0"
-    "@types/webpack" "^4.41.2"
-    react-docgen-typescript-loader "^3.6.0"
-    semver "^7.1.1"
+    "@storybook/node-logger" "^5.3.14"
+    "@types/webpack" "^4.41.7"
+    pnp-webpack-plugin "^1.6.4"
+    semver "^7.1.3"
 
 "@storybook/react@^5.3.17":
   version "5.3.17"
@@ -2242,10 +2242,10 @@
     "@types/source-list-map" "*"
     source-map "^0.6.1"
 
-"@types/webpack@^4.41.2":
-  version "4.41.7"
-  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.7.tgz#22be27dbd4362b01c3954ca9b021dbc9328d9511"
-  integrity sha512-OQG9viYwO0V1NaNV7d0n79V+n6mjOV30CwgFPIfTzwmk8DHbt+C4f2aBGdCYbo3yFyYD6sjXfqqOjwkl1j+ulA==
+"@types/webpack@^4.41.7":
+  version "4.41.8"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.8.tgz#d2244f5f612ee30230a5c8c4ae678bce90d27277"
+  integrity sha512-mh4litLHTlDG84TGCFv1pZldndI34vkrW9Mks++Zx4KET7DRMoCXUvLbTISiuF4++fMgNnhV9cc1nCXJQyBYbQ==
   dependencies:
     "@types/anymatch" "*"
     "@types/node" "*"
@@ -2461,18 +2461,6 @@
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/wast-parser" "1.8.5"
     "@xtuc/long" "4.2.2"
-
-"@webpack-contrib/schema-utils@^1.0.0-beta.0":
-  version "1.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@webpack-contrib/schema-utils/-/schema-utils-1.0.0-beta.0.tgz#bf9638c9464d177b48209e84209e23bee2eb4f65"
-  integrity sha512-LonryJP+FxQQHsjGBi6W786TQB1Oym+agTpY0c+Kj8alnIw+DLUJb6SI8Y1GHGhLCH1yPRrucjObUmxNICQ1pg==
-  dependencies:
-    ajv "^6.1.0"
-    ajv-keywords "^3.1.0"
-    chalk "^2.3.2"
-    strip-ansi "^4.0.0"
-    text-table "^0.2.0"
-    webpack-log "^1.1.2"
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -3853,7 +3841,7 @@ ccount@^1.0.0:
   resolved "https://registry.yarnpkg.com/ccount/-/ccount-1.0.5.tgz#ac82a944905a65ce204eb03023157edf29425c17"
   integrity sha512-MOli1W+nfbPLlKEhInaxhRdp7KVLFxLN5ykwzHgLsLI3H3gs5jjFAK4Eoj3OzzcxCtumDaI8onoVDeQyWaNTkw==
 
-chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.2:
+chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -8495,7 +8483,7 @@ lodash@4.17.15, "lodash@>=3.5 <5", lodash@^4.17.11, lodash@^4.17.12, lodash@^4.1
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
-log-symbols@^2.1.0, log-symbols@^2.2.0:
+log-symbols@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-2.2.0.tgz#5740e1c5d6f0dfda4ad9323b5332107ef6b4c40a"
   integrity sha512-VeIAFslyIerEJLXHziedo2basKbMKtTw3vfn5IzG0XTjhAVEJyNHnL2p7vc+wBDSdQuUpNw3M2u6xb9QsAY5Eg==
@@ -8513,14 +8501,6 @@ loglevel@^1.6.6:
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.7.tgz#b3e034233188c68b889f5b862415306f565e2c56"
   integrity sha512-cY2eLFrQSAfVPhCgH1s7JI73tMbg9YC3v3+ZHVW67sBS7UxWzNEk/ZBbSfLykBWHp33dqqtOv82gjhKEi81T/A==
-
-loglevelnext@^1.0.1:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/loglevelnext/-/loglevelnext-1.0.5.tgz#36fc4f5996d6640f539ff203ba819641680d75a2"
-  integrity sha512-V/73qkPuJmx4BcBF19xPBr+0ZRVBhc4POxvZTZdMeXpJ4NItXSJ/MSwuFT0kQJlCbXvdlZoQQ/418bS1y9Jh6A==
-  dependencies:
-    es6-symbol "^3.1.1"
-    object.assign "^4.1.0"
 
 longest-streak@^2.0.1:
   version "2.0.4"
@@ -9869,6 +9849,13 @@ pnp-webpack-plugin@1.6.0:
   dependencies:
     ts-pnp "^1.1.2"
 
+pnp-webpack-plugin@^1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/pnp-webpack-plugin/-/pnp-webpack-plugin-1.6.4.tgz#c9711ac4dc48a685dabafc86f8b6dd9f8df84149"
+  integrity sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
+  dependencies:
+    ts-pnp "^1.1.6"
+
 polished@^3.3.1:
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/polished/-/polished-3.4.4.tgz#ac8cd6e704887398f3b802718f9d389b9ea4307b"
@@ -11038,20 +11025,6 @@ react-dev-utils@^9.0.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-docgen-typescript-loader@^3.6.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/react-docgen-typescript-loader/-/react-docgen-typescript-loader-3.7.0.tgz#c2035929d93981f50ab96b71c0f58c8751aa6d23"
-  integrity sha512-M3oz/poiCSWsL9/OGtPHcpw6H85uEslVR44EV9itpG6kV570U/g9qY71UlJsPsigG5zanFHaVwrwhOpYjtSzlg==
-  dependencies:
-    "@webpack-contrib/schema-utils" "^1.0.0-beta.0"
-    loader-utils "^1.2.3"
-    react-docgen-typescript "^1.15.0"
-
-react-docgen-typescript@^1.15.0:
-  version "1.16.2"
-  resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-1.16.2.tgz#d5f26ba6591ac4bc61628c514d492de461ae7c2c"
-  integrity sha512-nECrg2qih81AKp0smkxXebF72/2EjmEn7gXSlWLDHLbpGcbw2yIorol24fw1FWqvndIY82sfSd0x/SyfMKY1Jw==
-
 react-docgen@^5.0.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/react-docgen/-/react-docgen-5.3.0.tgz#9aabde5e69f1993c8ba839fd9a86696504654589"
@@ -11964,7 +11937,7 @@ semver@7.0.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==
 
-semver@^7.1.1:
+semver@^7.1.3:
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.1.3.tgz#e4345ce73071c53f336445cfc19efb1c311df2a6"
   integrity sha512-ekM0zfiA9SCBlsKa2X1hxyxiI4L3B6EbVJkkdgQXnSEEaHlGdvyodMruTiulSRWMMB4NeIuYNMC9rTKTz97GxA==
@@ -13218,7 +13191,7 @@ ts-pnp@1.1.5:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.5.tgz#840e0739c89fce5f3abd9037bb091dbff16d9dec"
   integrity sha512-ti7OGMOUOzo66wLF3liskw6YQIaSsBgc4GOAlWRnIEj8htCxJUxskanMUoJOD6MDCRAXo36goXJZch+nOS0VMA==
 
-ts-pnp@^1.1.2:
+ts-pnp@^1.1.2, ts-pnp@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.6.tgz#389a24396d425a0d3162e96d2b4638900fdc289a"
   integrity sha512-CrG5GqAAzMT7144Cl+UIFP7mz/iIhiy+xQ6GGcnjTezhALT02uPMRw7tgDSESgB5MsfKt55+GPWw4ir1kVtMIQ==
@@ -13568,7 +13541,7 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
+uuid@^3.0.1, uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
@@ -13755,16 +13728,6 @@ webpack-hot-middleware@^2.25.0:
     html-entities "^1.2.0"
     querystring "^0.2.0"
     strip-ansi "^3.0.0"
-
-webpack-log@^1.1.2:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/webpack-log/-/webpack-log-1.2.0.tgz#a4b34cda6b22b518dbb0ab32e567962d5c72a43d"
-  integrity sha512-U9AnICnu50HXtiqiDxuli5gLB5PGBo7VvcHx36jRZHwK4vzOYLbImqT4lwWwoMHdQWwEKw736fCHEekokTEKHA==
-  dependencies:
-    chalk "^2.1.0"
-    log-symbols "^2.1.0"
-    loglevelnext "^1.0.1"
-    uuid "^3.1.0"
 
 webpack-log@^2.0.0:
   version "2.0.0"

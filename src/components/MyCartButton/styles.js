@@ -5,10 +5,9 @@ export const Container = styled.div`
   align-items: center;
   color: ${variables.whiteColor};
   display: grid;
-  grid-template-columns: 75% 25%;
-  height: 100%;
+  grid-column-start: ${({ gridColumn }) => (gridColumn || 1)};
+  grid-template-columns: 85% 15%;
   text-align: center;
-  width: 100%;
 `
 export const Name = styled.p`
  background: ${variables.secondaryColor};
@@ -16,6 +15,7 @@ export const Name = styled.p`
  border-top-left-radius: 3px;
  display: grid;
  justify-content: center;
+ margin-left: auto;
  padding: 10px 20px;
 `
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MyCartButton from '../MyCartButton'
+import Search from '../Search'
 
 import {
   Container, Wraper, Title, City, Tel, Menu, MenuItem, CityName,
@@ -33,6 +34,7 @@ export default function Header({
             }
           </Menu>
         ) : ''}
+        <Search text="Search products by SKU or name" />
         <MyCartButton value="15" name="MY CART" gridColumn="4" />
       </Wraper>
     </Container>

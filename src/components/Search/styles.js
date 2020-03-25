@@ -1,14 +1,23 @@
 import styled from 'styled-components'
+import variables from '../../styles/variables'
 
-export const Container = styled.div`
- align-items: center;
- border-radius: 3px;
- color: ${({ color }) => color};
- display: flex;
- height: 50px;
- padding: 10px;
- width: 660px;
+export const Container = styled.form`
+  align-items: center;
+  display: flex;
+  grid-column-start: 3;
+  position: relative;
 `
-export const Text = styled.p`
-  margin: 0 5px;
+export const Input = styled.input`
+  border: none;
+  border-radius: 3px;
+  color: ${variables.textColor};
+  font-size: ${variables.fontSizes.base};
+  height: 50px;
+  outline: none;
+  padding: 10px 35px;
+  width: 400px;
+`
+export const Image = styled.div`
+  left: 10px;
+  position: absolute;
 `

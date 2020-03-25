@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import {
-  Container, Title, Category, Items, Item,
+  Container, MainTitle, Title, Category, Items, Item,
 } from './styles'
 
 export default function SideMenu({ categories }) {
@@ -19,18 +19,22 @@ export default function SideMenu({ categories }) {
     <Category key={category.id.toString()}>
       <Title onClick={() => showCategory(category.id)}>{category.title}</Title>
       {
-        activeCategory === category.id
-          ? (
-            <Items>
-              {category.items.map((item) => <Item key={item.id}>{item.title}</Item>)}
-            </Items>
-          ) : null
+        activeCategory === category.id && (
+          <Items>
+            {category.items.map((item) => <Item key={item.id}>{item.title}</Item>)}
+          </Items>
+        )
       }
-
     </Category>
   ))
+
   return (
-    <Container>{listItems}</Container>
+    <>
+      <Container>
+        <MainTitle>All Categories</MainTitle>
+        {listItems}
+      </Container>
+    </>
   )
 }
 

@@ -14,8 +14,8 @@ export const Input = styled.input`
   font-size: ${variables.fontSizes.base};
   height: 50px;
   outline: none;
-  padding: 10px 35px;
-  width: 400px;
+  padding: 10px 40px;
+  width: 500px;
 `
 export const Image = styled.div`
   left: 10px;

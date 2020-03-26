@@ -1,16 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import variables from 'styles/variables'
-import { Container, Value } from './styles'
+import {
+  Container, Value, Lightbox, Card, Header, Body, Footer, Close,
+} from './styles'
 import Icon from '../Icon'
 
 export default function MyCartButton({ name, value, gridColumn }) {
+  const [doShow, setDoshow] = useState(false)
+
+  function handleClick() {
+    setDoshow(!doShow)
+  }
+
   return (
-    <Container gridColumn={gridColumn}>
-      <Icon name="shopping-car" width={25} color={variables.whiteColor} />
-      <p>{name}</p>
-      <Value>{value}</Value>
-    </Container>
+    <>
+      <Lightbox show={doShow}>
+        <Card>
+          <Header>
+            <Close onClick={handleClick}> x </Close>
+          </Header>
+          <Body />
+          <Footer />
+        </Card>
+      </Lightbox>
+
+      <Container gridColumn={gridColumn} onClick={handleClick}>
+        <Icon name="shopping-car" width={25} color={variables.whiteColor} />
+        <p>{name}</p>
+        <Value>{value}</Value>
+      </Container>
+    </>
   )
 }
 

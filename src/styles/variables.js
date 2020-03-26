@@ -31,6 +31,7 @@ export default {
   quinaryColor: '#393ab1',
   textColor: '#131313',
   whiteColor: '#fff',
+  translucid: '#ffffffc2',
   zIndex: {
     lvOne: '5',
     lvTwo: '10',

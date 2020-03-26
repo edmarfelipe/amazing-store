@@ -6,6 +6,7 @@ export const Container = styled.div`
   background: ${variables.secondaryColor};
   border-radius: 5px;
   color: ${variables.whiteColor};
+  cursor: pointer;
   display: grid;
   grid-column-start: ${({ gridColumn }) => (gridColumn || 1)};
   grid-template-columns: 25% 50% 25%;

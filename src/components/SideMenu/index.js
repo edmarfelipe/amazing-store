@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import {
-  Container, MainTitle, Title, Category, Items, Item,
+  Container, MainTitle, Title, Category, Items, Item, Box,
 } from './styles'
 
 export default function SideMenu({ categories }) {
@@ -31,8 +31,10 @@ export default function SideMenu({ categories }) {
   return (
     <>
       <Container>
-        <MainTitle>All Categories</MainTitle>
-        {listItems}
+        <Box>
+          <MainTitle>All Categories</MainTitle>
+          {listItems}
+        </Box>
       </Container>
     </>
   )

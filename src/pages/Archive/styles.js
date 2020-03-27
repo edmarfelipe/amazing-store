@@ -10,8 +10,9 @@ export const Container = styled.ul`
 `
 
 export const Grid = styled.div`
+  column-gap: 20px;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 1fr 3fr;
   margin: 0 auto;
   max-width: 1180px;
 `

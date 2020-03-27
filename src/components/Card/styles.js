@@ -36,7 +36,8 @@ export const Button = styled.button`
 
 export const Image = styled.img`
   height: auto;
-  width: 100px;
+  margin-top: 25px;
+  max-width: 80%;
 `
 
 export const Title = styled.span`

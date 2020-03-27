@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 1fr 50px;
-  margin: 50px 0;
+  margin: 30px 0;
 `
 
 export const Filters = styled.div`

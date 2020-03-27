@@ -16,7 +16,7 @@ export const Wraper = styled.div`
   height: 100%;
   margin: 0 auto;
   max-width: 1180px;
-  width: 80%;
+  padding: 10px 0;
 `
 
 export const Title = styled.span`

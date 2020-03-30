@@ -5,7 +5,6 @@ export const Container = styled.div`
   align-items: center;
   background: ${variables.secondaryColor};
   border-radius: 5px;
-  color: ${variables.whiteColor};
   cursor: pointer;
   display: grid;
   grid-column-start: ${({ gridColumn }) => (gridColumn || 1)};
@@ -20,6 +19,7 @@ export const Value = styled.p`
   align-items: center;
   background: ${variables.quinaryColor};
   border-radius: 0px 5px 5px 0px;
+  color: ${variables.colors.text.w000};
   display: grid;
   height: 100%;
   text-align: center;
@@ -46,8 +46,13 @@ export const Card = styled.div`
   width: 30vw;
 `
 export const Header = styled.div`
+  align-items: flex-end;
   background: ${variables.colors.secondary.w500};
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
   height: 100%;
+  justify-self: center;
+  padding: 15px;
   width: 100%;
 `
 export const Body = styled.div`
@@ -61,6 +66,8 @@ export const Footer = styled.div`
   height: 100%;
   width: 100%;
 `
-export const Close = styled.div`
-  cursor: pointer;
+
+export const Title = styled.h3`
+  color: ${variables.colors.text.w000};
+  font-weight: 400;
 `

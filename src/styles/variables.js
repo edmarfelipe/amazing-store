@@ -21,6 +21,7 @@ export default {
       w800: '#131313',
       w200: '#7b7b7b',
       w100: '#a3a3a3',
+      w000: '#ffffff',
     },
   },
   lineHeight: '20px',

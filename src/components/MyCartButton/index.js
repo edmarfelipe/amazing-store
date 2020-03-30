@@ -1,24 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import PropTypes from 'prop-types'
 import variables from 'styles/variables'
 import {
-  Container, Value, Lightbox, Card, Header, Body, Footer, Close,
+  Container, Value, Lightbox, Card, Header, Body, Footer, Title,
 } from './styles'
 import Icon from '../Icon'
 
 export default function MyCartButton({ name, value, gridColumn }) {
   const [doShow, setDoshow] = useState(false)
+  const cardRef = useRef()
 
-  function handleClick() {
+  function handleClick(e) {
+    if (cardRef.current.contains(e.target)) {
+      return
+    }
     setDoshow(!doShow)
   }
 
   return (
     <>
-      <Lightbox show={doShow}>
-        <Card>
+      <Lightbox show={doShow} onClick={(e) => handleClick(e)}>
+        <Card ref={cardRef}>
           <Header>
-            <Close onClick={handleClick}> x </Close>
+            <Icon name="shopping-car" width={25} color={variables.whiteColor} />
+            <Title> MY CART </Title>
           </Header>
           <Body />
           <Footer />
@@ -27,7 +32,7 @@ export default function MyCartButton({ name, value, gridColumn }) {
 
       <Container gridColumn={gridColumn} onClick={handleClick}>
         <Icon name="shopping-car" width={25} color={variables.whiteColor} />
-        <p>{name}</p>
+        <Title>{name}</Title>
         <Value>{value}</Value>
       </Container>
     </>

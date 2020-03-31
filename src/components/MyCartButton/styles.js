@@ -7,12 +7,13 @@ export const Container = styled.div`
   border-radius: 5px;
   cursor: pointer;
   display: grid;
-  grid-column-start: ${({ gridColumn }) => (gridColumn || 1)};
+  grid-column-end: 13;
+  grid-column-start: 11;
   grid-template-columns: 25% 50% 25%;
   height: 50px;
   justify-items: center;
   justify-self: end;
-  width: 60%;
+  width: 90%;
 `
 
 export const Value = styled.p`

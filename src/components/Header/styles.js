@@ -11,7 +11,7 @@ export const Wraper = styled.div`
   align-items: center;
   color: ${Variables.textColor};
   display: grid;
-  grid-template-columns: 285px auto auto 340px;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr;
   height: 100%;
   margin: 0 auto;
@@ -25,14 +25,16 @@ export const Title = styled.span`
   font-size: ${Variables.fontSizes.lg};
   font-weight: 500;
   grid-area: 1;
+  grid-column: span 3;
   margin-left: 24px;
-  margin-top: 13px;
+  padding: 20px 0;
 `
 
 export const City = styled.span`
   font-size: ${Variables.fontSizes.md};
   grid-area: 1;
-  margin: 18px 0 0 30px;
+  grid-column-end: 7;
+  grid-column-start: 4;
 
   svg {
     margin-right: 11px;
@@ -50,7 +52,8 @@ export const Tel = styled.a`
   color: ${Variables.textColor};
   font-size: ${Variables.fontSizes.md};
   grid-area: 1;
-  margin: 18px 0 0 68px;
+  grid-column-end: 9;
+  grid-column-start: 7;
   text-decoration: none;
 
   &:hover {
@@ -65,9 +68,10 @@ export const Tel = styled.a`
 
 export const Menu = styled.ul`
   grid-area: 1;
+  grid-column-end: 13;
+  grid-column-start: 9;
+  justify-self: end;
   list-style: none;
-  margin: 18px 0 0;
-  padding: 9px 0 9px 9px;
 `
 
 export const MenuItem = styled.li`

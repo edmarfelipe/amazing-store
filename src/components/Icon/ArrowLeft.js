@@ -16,12 +16,6 @@ export default function ArrowLeft({ width }) {
           <use xlinkHref="#path_1" />
         </clipPath>
       </defs>
-      <g id="Rectangle-17">
-        <use stroke="none" fill="#FFFFFF" xlinkHref="#path_1" />
-        <g clipPath="url(#clip_1)">
-          <use xlinkHref="#path_1" fill="none" stroke="#CFCFCF" strokeWidth="2" />
-        </g>
-      </g>
       <path d="M10 0L5 5L0 0" transform="matrix(4.371139E-08 -1 -1 -4.371139E-08 17 20.5)" id="expand_arrow" fill="none" stroke="#464646" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )

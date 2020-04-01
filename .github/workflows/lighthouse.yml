@@ -1,0 +1,19 @@
+name: Lighthouse Check
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  lighthouse-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: npm install
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseCheck
+        with:
+          urls: 'https://amazing-store.netlify.com/'
+      - name: Handle Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master

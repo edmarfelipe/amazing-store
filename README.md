@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Amazing Store
+
+![Build](https://github.com/edmarfelipe/amazing-store/workflows/Build%20and%20Test/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c35975933d3c6e338846/maintainability)](https://codeclimate.com/github/edmarfelipe/amazing-store/maintainability)
+
 
 ## Available Scripts
 

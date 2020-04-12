@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import Modal from 'react-modal'
 import MyCartButton from '../MyCartButton'
 import Search from '../Search'
 
@@ -9,9 +10,25 @@ import {
 
 import Icon from '../Icon'
 
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+}
 export default function Header({
   title, cityName, tel, menuItems,
 }) {
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+
+  function changeModalState() {
+    setModalIsOpen(!modalIsOpen)
+  }
+
   return (
     <Container>
       <Wraper>
@@ -35,7 +52,15 @@ export default function Header({
           </Menu>
         ) : ''}
         <Search text="Search products by SKU or name" />
-        <MyCartButton value="15" name="MY CART" gridColumn="4" />
+        <MyCartButton value="15" name="MY CART" gridColumn="4" handleOpenModal={changeModalState} />
+
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={changeModalState}
+          style={customStyles}
+        >
+          Oi
+        </Modal>
       </Wraper>
     </Container>
   )

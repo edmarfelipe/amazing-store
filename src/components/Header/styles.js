@@ -113,5 +113,6 @@ export const Footer = styled.div`
 
 export const CardTitle = styled.h3`
   color: ${Variables.colors.text.w000};
-  font-weight: 400;
+  font-size: ${Variables.fontSizes.lg};
+  font-weight: 600;
 `

@@ -102,6 +102,7 @@ export const CardHeader = styled.div`
 export const Body = styled.div`
   background: ${Variables.whiteColor};
   height: 100%;
+  padding: 25px;
   width: 100%;
 `
 

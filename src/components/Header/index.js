@@ -4,6 +4,7 @@ import Modal from 'react-modal'
 import variables from '../../styles/variables'
 import MyCartButton from '../MyCartButton'
 import Search from '../Search'
+import Item from '../Item'
 
 import {
   Container, Wraper, Title, City, Tel, Menu, MenuItem, CityName, CardHeader,
@@ -71,7 +72,26 @@ export default function Header({
             <Icon name="shopping-car" width={25} color={variables.whiteColor} />
             <CardTitle> MY CART </CardTitle>
           </CardHeader>
-          <Body />
+          <Body>
+            <Item
+              title="Missha All Around Safe Block Sebum Zero Sun"
+              imageUrl="./assets/imgs/product-1.png"
+              imageAlt="Block Sebum Zero Sun"
+              price="4.00"
+            />
+            <Item
+              title="Claire’s Cloud 9 Blanc De Whitening Cream"
+              imageUrl="./assets/imgs/product-3.png"
+              imageAlt="Whitening Cream"
+              price="4.00"
+            />
+            <Item
+              title="Missha All Around Safe Block Sebum Zero Sun"
+              imageUrl="./assets/imgs/product-1.png"
+              imageAlt="Block Sebum Zero Sun"
+              price="4.00"
+            />
+          </Body>
           <Footer />
         </Modal>
       </Wraper>

@@ -88,3 +88,32 @@ export const MenuItem = styled.li`
     padding-left: 16px;
   }
 `
+
+export const CardHeader = styled.div`
+  align-items: flex-end;
+  background: ${Variables.colors.secondary.w500};
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+  height: 100%;
+  justify-self: center;
+  padding: 15px;
+  width: 100%;
+`
+export const Body = styled.div`
+  background: ${Variables.whiteColor};
+  height: 100%;
+  padding: 25px;
+  width: 100%;
+`
+
+export const Footer = styled.div`
+  background: ${Variables.colors.primary.w500};
+  height: 100%;
+  width: 100%;
+`
+
+export const CardTitle = styled.h3`
+  color: ${Variables.colors.text.w000};
+  font-size: ${Variables.fontSizes.lg};
+  font-weight: 600;
+`

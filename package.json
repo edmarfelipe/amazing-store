@@ -30,7 +30,7 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@storybook/addon-centered": "^5.3.18",
     "@storybook/addons": "^5.3.18",
-    "@storybook/preset-create-react-app": "^2.1.1",
+    "@storybook/preset-create-react-app": "^2.1.2",
     "@storybook/react": "^5.3.18",
     "@testing-library/react": "^10.0.4",
     "@testing-library/user-event": "^10.3.3",

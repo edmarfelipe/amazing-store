@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import Arrow from './Arrow'
 import ArrowLeft from './ArrowLeft'
+import ArrowRight from './ArrowRight'
 import Close from './Close'
 import Location from './Location'
 import Phone from './Phone'
@@ -15,6 +16,8 @@ export default function Icon({ name, color, width }) {
       return <Arrow color={color} width={`${width}px`} />
     case 'arrowleft':
       return <ArrowLeft width={`${width}px`} />
+    case 'arrowright':
+      return <ArrowRight width={`${width}px`} />
     case 'close':
       return <Close color={color} width={`${width}px`} />
     case 'location':
@@ -31,7 +34,7 @@ export default function Icon({ name, color, width }) {
 }
 
 Icon.propTypes = {
-  name: PropTypes.oneOf(['arrow', 'arrowleft', 'close', 'location', 'phone', 'search', 'shopping-car']).isRequired,
+  name: PropTypes.oneOf(['arrow', 'arrowleft', 'arrowright', 'close', 'location', 'phone', 'search', 'shopping-car']).isRequired,
   color: PropTypes.string,
   width: PropTypes.number,
 }

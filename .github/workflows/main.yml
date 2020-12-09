@@ -63,21 +63,3 @@ jobs:
 
     - name: Build
       run: yarn build
-
-  test:
-    needs: install
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
-
-    - name: Cache
-      uses: actions/cache@v1
-      with:
-        path: node_modules
-        key: node_modules-${{ hashFiles('**/yarn.lock') }}
-
-    - name: Test
-      run: yarn test
-      env:
-        CI: true

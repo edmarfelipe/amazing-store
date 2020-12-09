@@ -1,8 +1,8 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import Icon from '../Icon'
+import Icon from '../../core/Icon'
 import { Container, Input, Image } from './styles'
-import variables from '../../styles/variables'
+import variables from '../../../styles/variables'
 
 export default function Search() {
   return (

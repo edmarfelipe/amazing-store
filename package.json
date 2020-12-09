@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "yarn lint:scripts && yarn lint:styles",
     "lint-fix": "yarn lint-fix:scripts",
     "lint:styles": "stylelint src",
@@ -15,34 +15,35 @@
     "build-storybook": "build-storybook -s docs"
   },
   "dependencies": {
+    "next": "^10.0.3",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-modal": "^3.11.2",
-    "react-scripts": "^3.4.1",
-    "styled-components": "^5.1.1",
-    "react-redux": "^7.2.1",
-    "redux": "^4.0.5"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-modal": "^3.12.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
     "@storybook/addon-centered": "^5.3.19",
     "@storybook/addons": "^5.3.18",
-    "@storybook/preset-create-react-app": "^3.0.1",
     "@storybook/react": "^5.3.19",
-    "eslint": "^7.6.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.5",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.2.5",
-    "stylelint": "^13.6.1",
+    "stylelint": "^13.8.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-declaration-use-variable": "^1.7.2",
     "stylelint-order": "^4.1.0",
-    "stylelint-processor-styled-components": "^1.9.0"
+    "stylelint-processor-styled-components": "^1.10.0"
   },
   "browserslist": {
     "production": [

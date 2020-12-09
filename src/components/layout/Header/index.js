@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Modal from 'react-modal'
-import variables from '../../styles/variables'
-import MyCartButton from '../MyCartButton'
+import variables from '../../../styles/variables'
+import MyCartButton from '../../core/MyCartButton'
 import Search from '../Search'
-import Item from '../Item'
+import Item from '../../core/Item'
 
 import {
   Container, Wraper, Title, City, Tel, Menu, MenuItem, CityName, CardHeader,
   CardTitle, Body, Footer,
 } from './styles'
 
-import Icon from '../Icon'
+import Icon from '../../core/Icon'
 
 const customStyles = {
   overlay: {

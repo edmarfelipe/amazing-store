@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Card from 'components/Card'
-import SideMenu from 'components/SideMenu'
-import SubHeader from 'components/SubHeader'
+import Card from 'components/core/Card'
+import SideMenu from 'components/layout/SideMenu'
+import SubHeader from 'components/layout/SubHeader'
 import { Container, Grid } from './styles'
 
 const categories = [

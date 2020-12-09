@@ -3,7 +3,7 @@ import {
   Container, Filters, FiltersName, Paginator, PaginatorTitle, Row, RowFilters, Title,
 } from './styles'
 
-import Icon from '../Icon'
+import Icon from '../../core/Icon'
 
 export default function SubHeader() {
   return (

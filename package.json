@@ -27,7 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
-    "@storybook/addon-centered": "^5.3.19",
+    "@storybook/addon-centered": "^5.3.21",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.19",
     "babel-plugin-styled-components": "^1.12.0",
